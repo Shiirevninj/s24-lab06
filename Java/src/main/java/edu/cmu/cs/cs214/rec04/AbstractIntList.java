@@ -14,6 +14,7 @@ public abstract class AbstractIntList implements IntegerList {
      * @param num an integer to be added to the list
      * @return true if the list is changed as a result of the call
      */
+    @Override
     public abstract boolean add(int num);
 
     /**
@@ -24,6 +25,7 @@ public abstract class AbstractIntList implements IntegerList {
      * @param list IntegerList containing elements to be added to the list
      * @return true if the list changed as a result of the call
      */
+    @Override
     public boolean addAll(IntegerList list) {
 
         boolean success = false;
@@ -42,6 +44,7 @@ public abstract class AbstractIntList implements IntegerList {
      * @param index index of the element to return
      * @return the element at the specified position in this list
      */
+    @Override
     public abstract int get(int index);
 
     /**
@@ -51,6 +54,7 @@ public abstract class AbstractIntList implements IntegerList {
      * @param num an integer to be removed from the list, if present
      * @return true if an element was removed as a result of this call
      */
+    @Override
     public abstract boolean remove(int num);
 
     /**
@@ -61,6 +65,7 @@ public abstract class AbstractIntList implements IntegerList {
      * the list
      * @return true if the list changed as a result of the call
      */
+    @Override
     public abstract boolean removeAll(IntegerList list);
 
     /**
@@ -69,6 +74,7 @@ public abstract class AbstractIntList implements IntegerList {
      *
      * @return number of elements in the list
      */
+    @Override
     public abstract int size();
 
 }
